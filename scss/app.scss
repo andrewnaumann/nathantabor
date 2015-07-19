@@ -38,3 +38,63 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+.left-off-canvas-menu {
+  position: fixed;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.top-bar {
+  z-index: 1;
+}
+
+.flavor-text {
+  h3 {
+    margin-top: 50px;
+  }
+  
+  h5 {
+    margin-bottom: 25px;
+  }
+}
+
+.post {
+  
+  a.button{
+    width: 100%;
+  }
+}
+
+.hero{
+  position: relative;
+  margin-top: -45px;
+  height: 700px;
+  background: url("/img/DSC_2682.jpg");
+  background-size: cover;
+  background-position: top;
+  color: #FFF;
+  
+  .hero-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: inherit;
+  }
+  h4 {
+    color: inherit;
+  }
+}
