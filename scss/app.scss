@@ -39,6 +39,11 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
+
+p {
+    font-family: $font-family-serif;
+}
+
 .left-off-canvas-menu {
   position: fixed;
 }
@@ -49,30 +54,64 @@
    margin-right: auto;
    max-width: initial;
 }
-
 .no-padding {
   padding: 0;
+}
+
+.post {
+  margin-bottom: 3rem;
 }
 
 .top-bar {
   z-index: 1;
 }
 
+body {
+  background: #F6F6F6;
+}
+
+.row {
+  background: #FFF;
+}
 .flavor-text {
-  h3 {
-    margin-top: 50px;
-  }
+  height: 150px;
   
-  h5 {
-    margin-bottom: 25px;
+  h2 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
-.post {
+.about {
+  a {
+    @media #{$medium-up} {
+      margin-top: 1rem;
+    }
   
-  a.button{
-    width: 100%;
+    @media #{$large-up} {
+      position: absolute;
+      right: rem-calc(30);
+      bottom: 0;
+    }
   }
+}
+
+.about-text {
+  @media #{$medium-up} { 
+    .content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.bar-thing {
+  position: relative;
+  height: 35px;
+  margin-top: -35px;
+  z-index: 1;
 }
 
 .hero{
@@ -97,4 +136,16 @@
   h4 {
     color: inherit;
   }
+}
+
+.page-footer {
+  height: 100px;
+}
+
+.footer-nav {
+
+}
+
+.header, .about, .page-footer {
+  background: #EEE;
 }
