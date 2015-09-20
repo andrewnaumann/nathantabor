@@ -8888,31 +8888,46 @@ p {
   margin: 0;
 }
 
-/* line 186, ../scss/app.scss */
+/* line 184, ../scss/app.scss */
+.contact {
+  margin-bottom: 50px;
+}
+
+/* line 189, ../scss/app.scss */
 .page-footer {
   padding: 75px 0;
   background-color: #555555;
 }
-/* line 190, ../scss/app.scss */
+/* line 193, ../scss/app.scss */
 .page-footer a {
   color: #CCCCCC;
 }
-/* line 194, ../scss/app.scss */
+/* line 197, ../scss/app.scss */
 .page-footer a:hover {
   color: #e6e6e6;
 }
-/* line 198, ../scss/app.scss */
+/* line 201, ../scss/app.scss */
 .page-footer ul {
   list-style: none;
   text-align: center;
 }
-/* line 201, ../scss/app.scss */
+/* line 204, ../scss/app.scss */
 .page-footer ul li {
   display: inline-block;
   margin: 0 10px;
 }
 
-/* line 216, ../scss/app.scss */
+/* line 211, ../scss/app.scss */
+.hero {
+  margin-bottom: 50px;
+}
+
+/* line 219, ../scss/app.scss */
+.content {
+  margin-bottom: 50px;
+}
+
+/* line 225, ../scss/app.scss */
 textarea {
   min-height: 150px;
 }
