@@ -9489,7 +9489,7 @@ body {
 /* line 79, ../scss/app.scss */
 .flavor-text h2 {
   position: relative;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
 }
 
