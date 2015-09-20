@@ -1,151 +1,218 @@
 @import "settings";
-@import "foundation";
 
 // Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
+ @import
+   "foundation/components/accordion",
+   "foundation/components/alert-boxes",
+   "foundation/components/block-grid",
+   "foundation/components/breadcrumbs",
+   "foundation/components/button-groups",
+   "foundation/components/buttons",
+   "foundation/components/clearing",
+   "foundation/components/dropdown",
+   "foundation/components/dropdown-buttons",
+   "foundation/components/flex-video",
+   "foundation/components/forms",
+   "foundation/components/grid",
+   "foundation/components/inline-lists",
+   "foundation/components/joyride",
+   "foundation/components/keystrokes",
+   "foundation/components/labels",
+   "foundation/components/magellan",
+   "foundation/components/orbit",
+   "foundation/components/pagination",
 //   "foundation/components/panels",
 //   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switches",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+   "foundation/components/progress-bars",
+   "foundation/components/reveal",
+   "foundation/components/side-nav",
+   "foundation/components/split-buttons",
+   "foundation/components/sub-nav",
+   "foundation/components/switches",
+   "foundation/components/tables",
+   "foundation/components/tabs",
+   "foundation/components/thumbs",
+   "foundation/components/tooltips",
+   "foundation/components/top-bar",
+   "foundation/components/type",
+   "foundation/components/offcanvas",
+   "foundation/components/visibility";
 
+$accentColor: #4A90E2;
+$secondaryBackground: #FFF;
 
 p {
-    font-family: $font-family-serif;
+  font-family: $font-family-serif;
 }
 
-.left-off-canvas-menu {
+.divider {
+  height: 4px;
+  margin: 10px 0;
+  background-color: $tuatara;
+}
+
+.full-page, .full-height {
+  position: relative;
+  height: 100%;
+}
+
+.main-nav {
+  z-index: 1;
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+//  transform: translateY(-50%);
+}
+
+.fixed-nav {
   position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.fullWidth {
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: initial;
-}
-.no-padding {
-  padding: 0;
+.white {
+  background-color: $white;
 }
 
-.post {
-  margin-bottom: 3rem;
+//Horizontal Section Divider
+.section-header-wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.top-bar {
-  z-index: 1;
+.section-header {
+  margin: 50px 0;
+  overflow: hidden;
+  white-space: nowrap; 
 }
 
-body {
-  background: #F6F6F6;
-}
-
-.row {
-  background: #FFF;
-}
-.flavor-text {
-  height: 150px;
-  
-  h2 {
-    position: relative;
-    top: 35%;
-    transform: translateY(-50%);
-  }
-}
-
-.about {
-  a {
-    @media #{$medium-up} {
-      margin-top: 1rem;
-    }
-  
-    @media #{$large-up} {
-      position: absolute;
-      right: rem-calc(30);
-      bottom: 0;
-    }
-  }
-}
-
-.about-text {
-  @media #{$medium-up} { 
-    .content {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-}
-
-.bar-thing {
+.section-header > h2 {
   position: relative;
-  height: 35px;
-  margin-top: -35px;
-  z-index: 1;
+  display: inline-block;
 }
 
-.hero{
-  position: relative;
-  margin-top: -45px;
-  height: 700px;
-  background: url("../img/DSC_2682.jpg");
+.section-header > h2:before,
+.section-header > h2:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 1920px;
+  height: 3px;
+  background: $tuatara;
+}
+
+.section-header > h2:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.section-header > h2:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+
+
+// Splash Section
+.splash-wrapper {
+//  background: linear-gradient(to bottom, rgba(255,255,255,0) 30%, rgba(255,255,255,1)), 
+//              linear-gradient(90deg, rgba(255, 255, 255,1), rgba(255, 255, 255,.8) 60%, rgba(255, 255, 255,0)), 
+//              url(../images/DSC_1484.jpg);
+  
+  background: linear-gradient(to bottom, rgba(249,249,249,0) 30%, rgba(249,249,249,1)), 
+              linear-gradient(90deg, rgba(249, 249, 249,1), rgba(249, 249, 249,.8) 60%, rgba(249, 249, 249,0)), 
+              url(../images/DSC_1484.jpg);
+  background-position: center;
   background-size: cover;
-  background-position: top;
-  color: #FFF;
-  
-  .hero-text {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
+}
+
+.splash-page__headers {
   h1 {
-    font-size: 3rem;
-    color: inherit;
-  }
-  h4 {
-    color: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 }
 
+.splash-page__divider {
+  @extend .divider;
+  width: 80px;
+}
+
+
+.page-nav {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+
+ // Panel
+
+.panel {
+  
+  &.panel--research {
+    margin-bottom: 30px;
+  }
+  
+  &>.row {
+    background: $secondaryBackground;
+    padding-bottom: 1px;
+  }
+  
+  .panel__divider {
+    @extend .divider;
+    width: 50px;
+  }
+  
+  .panel__content {
+    padding: 15px;
+  }
+  
+  .panel__heading {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .panel__button {
+//    text-decoration: underline;
+  }
+}
+
+
+// Page Footer
 .page-footer {
-  height: 100px;
+  padding: 75px 0;
+  background-color: $charcoal;
+  
+  a {
+    color: $iron;
+  }
+  
+  a:hover {
+    color: lighten($iron, 10%);
+  }
+  
+  ul {
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
 }
 
-.footer-nav {
-
+.hero {
+  .hero__image {
+    
+  }
 }
 
-.header, .about, .page-footer {
-  background: #EEE;
+
+//FORM STYLES
+textarea {
+  min-height: 150px;
 }

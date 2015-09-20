@@ -3,132 +3,181 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nathan Tabor</title>
+    <title>Foundation</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-<!--    MOBILE MENU    -->
-    <div class="off-canvas-wrap" data-offcanvas>
-      <div class="inner-wrap">
-        <div class="fixed hide-for-medium-up">
-          <nav class="tab-bar main-nav">
-            <section class="left-small">
-              <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-            </section>
+    
+    <div class="contain-to-grid page-nav fixed-nav">
+      <nav class="top-bar main-nav" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="index.html">Nathan Tabor</a></h1>
+        </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
 
-            <section class="middle tab-bar-section">
-              <h1 class="title">Nathan Tabor</h1>
-            </section>
-          </nav>
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+    </div>
+    
+    <div class="splash-wrapper full-page">
+      <section class="row splash-page full-page">
+        <div class="small-12 medium-10 large-8 columns full-page">
+          <hgroup class="splash-page__headers vertical-center">
+            <h1> Blue Bottle direct trade small batch Etsy. </h1>
+            <div class="splash-page__divider"></div>
+            <h4>Ugh sriracha street art, Kickstarter retro tousled trust fund roof party letterpress jean shorts. American Apparel Intelligentsia mlkshk, lomo direct trade hella Schlitz tattooed Banksy meh mixtape blog.</h4>
+          </hgroup>
         </div>
-
-        <aside class="left-off-canvas-menu hide-for-medium-up">
-          <ul class="off-canvas-list">
-            <li><label>Menu</label></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Item 3</a></li>
-            <li><a href="#">Item 4</a></li>
-          </ul>
-        </aside>
-        
-<!--        TABLET AND UP MENU    -->
-        <div class="contain-to-grid">
-          <nav class="top-bar hide-for-small" data-topbar role="navigation">
-            <ul class="title-area">
-              <li class="name">
-                <h1><a href="#">Nathan Tabor</a></h1>
-              </li>
-               <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-              <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-            </ul>
-
-            <section class="top-bar-section">
-              <!-- Right Nav Section -->
-              <ul class="right">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
-              </ul>
-
-            </section>
-          </nav>
-        </div>
-
-        <section class="main-section">
-          <div class="row fullWidth">
-            <div class="hero small-12 columns text-center">
-              <div class="hero-text">
-                <h1>Nathan Tabor</h1>
-                <h4>Master of the Universe</h4>
-              </div>
-            </div>
-          </div>
-            <div class="row bar-thing"></div>
-            <div class="row flavor-text text-center">
-              <h2>Discover My Research</h2>
-            </div>
-            <div class="row research-list" data-equalizer>
-              <div class="small-12 medium-6 columns post">
-                <img src="img/DSC_1268.JPG">
-                <h2>Poetry Events</h2>
-                <p data-equalizer-watch>Fixie tote bag narwhal quinoa Neutra, banjo small batch art party four dollar toast organic retro Portland fingerstache.Bitters beard flexitarian, four loko polaroid cold-pressed swag actually you probably haven't heard of them Tumblr ugh next level American Apparel.</p>
-                <div class="row">
-                  <div class=" small-12 columns text-center">
-                    <a href="#" class="button small">Discover More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="small-12 medium-6 columns post">
-                <img src="img/DSC_5675.JPG">
-                <h2>Muslim India</h2>
-                <p data-equalizer-watch>Occupy messenger bag kale chips Truffaut, Pinterest swag Helvetica distillery. Wayfarers occupy Wes Anderson church-key. VHS +1 Carles, deep v trust fund readymade mlkshk synth blog XOXO sriracha you probably haven't heard of them disrupt cray Pinterest. Brunch Neutra mustache organic tilde.</p>
-                <div class=" small-12 columns text-center">
-                    <a href="#" class="button small">Discover More</a>
-                </div>
-              </div>
-            </div>
-            <div class="row about" data-equalizer>
-              <div class="small-12 medium-6 columns" data-equalizer-watch>
-                <img src="img/DSC_9277.jpg">
-              </div>
-              <div class="small-12 medium-6 columns about-text" data-equalizer-watch>
-                <div class="content">
-                  <h2>About Me</h2>
-                  <p>
-                  Tumblr McSweeney's lo-fi viral hoodie Schlitz selvage four dollar toast sustainable swag. Bicycle rights McSweeney's kitsch chia. Tofu deep v hoodie, aesthetic vinyl beard tote bag letterpress. Art party synth fap gentrify, fashion axe biodiesel bespoke.  
-                  </p>
-                </div>
-                <a href="#" class="button small hide-for-medium-down">Learn More</a>
-              </div>
-              <div class="small-12 columns text-center hide-for-large">
-                    <a href="#" class="button small">Learn More</a>
-              </div>
-            </div>
-          <footer class="row page-footer">
-            <hr>
-            <div class="small-12 columns">
-              <nav class="footer-nav hide-for-small">
-                <ul class="inline-list">
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Research</a></li>
-                  <li><a href="#">item 3</a></li>
-                  <li><a href="#">item 4</a></li>
-                </ul>
-              </nav>
-              <p class="text-center">Copyright: Nathan Tabor 2015</p>
-            </div>
-          </footer>
-          
-        </section>
-
-      <a class="exit-off-canvas"></a>
-
+      </section>
+    </div>
+    
+<!--    RESEARCH PANEL SECTION-->
+    
+    <div class="row section-header-wrapper">
+      <div class="small-12 text-center columns section-header">
+        <h2>Featured Research</h2>
       </div>
     </div>
     
+    <div class="row">
+      
+      <section class="panel panel--research small-12 medium-6 large-12 columns">
+        <div class="row collapse">
+          <div class="small-12 large-6 columns">
+            <img class="panel__image" src="images/DSC_2503.jpg">
+          </div>
+          <div class="small-12 large-6 columns">
+            <section class="panel__content">
+              <h3 class="panel__heading">Poetry Events</h3>
+              <div class="panel__divider"></div>
+              <p>Pinterest put a bird on it ennui cray Thundercats, fap authentic organic American Apparel before they sold out heirloom ugh pour-over. Kogi tousled jean shorts, Wes Anderson single-origin coffee Portland selfies butcher semiotics wolf cray church-key taxidermy street art.</p>
+              <a href="#" class="panel__button">Read More</a>
+            </section>
+          </div>
+        </div>
+      </section>
+      
+      <section class="panel panel--research small-12 medium-6 large-12 columns">
+        <div class="row collapse">
+          <div class="small-12 large-6 large-push-6 columns">
+            <img class="panel__image" src="images/DSC_3977.JPG">
+          </div>
+          <div class="small-12 large-6 large-pull-6 columns">
+            <section class="panel__content">
+              <h3 class="panel__heading">People of Muslim India</h3>
+              <div class="panel__divider"></div>
+              <p>Four loko hella Odd Future Neutra. Photo booth craft beer art party health goth 90's. Master cleanse bicycle rights cardigan McSweeney's, jean shorts Tumblr Thundercats 3 wolf moon Marfa locavore street art keytar deep v meggings stumptown. </p>
+              <a href="#" class="panel__button">Read More</a>
+            </section>
+          </div>
+        </div>
+      </section>
+      
+    </div> <!-- end Row -->
+    
+    
+    <div class="row section-header-wrapper">
+      <div class="small-12 text-center columns section-header">
+        <h2>About Me</h2>
+      </div>
+    </div>
+    
+    <div class="row">
+      <section class="panel small-12 columns">
+        <div class="row collapse">
+          <div class="small-12 medium-6 columns">
+            <img class="panel__image" src="images/DSC_9277.jpg">
+          </div>
+          <div class="small-12 medium-6 columns">
+            <section class="panel__content">
+              <h3 class="panel__heading">Nathan Tabor</h3>
+              <h5 class="panel__heading">Professor at Western Michigan University</h5>
+              <div class="panel__divider"></div>
+              <a href="#">Resume</a><br>
+              <a href="#">Biography</a>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+      
+    
+    <div class="row section-header-wrapper">
+      <div class="small-12 text-center columns section-header">
+        <h2>Let's Talk</h2>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="small-12 columns">
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-8 columns">
+        <form>
+          <div class="row">
+            <div class="small-12 medium-6 columns">
+              <label>Name
+                <input type="text" placeholder="John Doe" />
+              </label>
+            </div>
+          <div class="small-12 medium-6 columns">
+              <label>Email
+                <input type="text" placeholder="your@email.com">
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <label>Message
+                <textarea placeholder="Type your message here."></textarea>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <input class="button small" type="submit">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="small-12 medium-4 columns">
+        <address>
+          Nathan Tabor<br>
+          1234 Somewhere St.<br>
+          Kalamazoo, MI, 49007<br>
+          <br>
+          Phone: 555-555-5555<br>
+          Email: <a href="#">nathan@natetabor.com</a><br>
+        </address>
+      </div>
+    </div>
+    
+    <footer class="page-footer">
+      <div class="row">
+        <div class="small-12 small-centered columns">
+          <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
