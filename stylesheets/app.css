@@ -8851,88 +8851,89 @@ p {
 
 /* line 135, ../scss/app.scss */
 .splash-page__headers h1 {
+  margin-top: 50%;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 141, ../scss/app.scss */
+/* line 142, ../scss/app.scss */
 .splash-page__divider {
   width: 80px;
 }
 
-/* line 147, ../scss/app.scss */
+/* line 148, ../scss/app.scss */
 .page-nav {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-/* line 157, ../scss/app.scss */
+/* line 158, ../scss/app.scss */
 .panel.panel--research {
   margin-bottom: 30px;
 }
-/* line 161, ../scss/app.scss */
+/* line 162, ../scss/app.scss */
 .panel > .row {
   background: #FFF;
   padding-bottom: 1px;
 }
-/* line 166, ../scss/app.scss */
+/* line 167, ../scss/app.scss */
 .panel .panel__divider {
   width: 50px;
 }
-/* line 171, ../scss/app.scss */
+/* line 172, ../scss/app.scss */
 .panel .panel__content {
   padding: 15px;
 }
-/* line 175, ../scss/app.scss */
+/* line 176, ../scss/app.scss */
 .panel .panel__heading {
   font-weight: bold;
   margin: 0;
 }
 
-/* line 185, ../scss/app.scss */
+/* line 186, ../scss/app.scss */
 .contact {
   margin-bottom: 50px;
 }
 
-/* line 190, ../scss/app.scss */
+/* line 191, ../scss/app.scss */
 .page-footer {
   padding: 75px 0;
   background-color: #555555;
 }
-/* line 194, ../scss/app.scss */
+/* line 195, ../scss/app.scss */
 .page-footer a {
   color: #CCCCCC;
 }
-/* line 198, ../scss/app.scss */
+/* line 199, ../scss/app.scss */
 .page-footer a:hover {
   color: #e6e6e6;
 }
-/* line 202, ../scss/app.scss */
+/* line 203, ../scss/app.scss */
 .page-footer ul {
   list-style: none;
   text-align: center;
 }
-/* line 205, ../scss/app.scss */
+/* line 206, ../scss/app.scss */
 .page-footer ul li {
   display: inline-block;
   margin: 0 10px;
 }
 
-/* line 212, ../scss/app.scss */
+/* line 213, ../scss/app.scss */
 .hero {
   margin-bottom: 50px;
 }
 
-/* line 220, ../scss/app.scss */
+/* line 221, ../scss/app.scss */
 .content {
   margin-bottom: 50px;
 }
-/* line 223, ../scss/app.scss */
+/* line 224, ../scss/app.scss */
 .content .content__header {
   font-weight: bold;
 }
 
-/* line 230, ../scss/app.scss */
+/* line 231, ../scss/app.scss */
 textarea {
   min-height: 150px;
 }
