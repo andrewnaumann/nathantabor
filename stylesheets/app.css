@@ -8786,7 +8786,16 @@ p {
   top: 50%;
 }
 
-/* line 70, ../scss/app.scss */
+@media only screen and (min-width: 40.0625em) {
+  /* line 70, ../scss/app.scss */
+  .vertical-center--medium-up {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* line 78, ../scss/app.scss */
 .fixed-nav {
   position: fixed;
   z-index: 99;
@@ -8795,31 +8804,31 @@ p {
   width: 100%;
 }
 
-/* line 78, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 .white {
   background-color: #FFFFFF;
 }
 
-/* line 83, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 .section-header-wrapper {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 88, ../scss/app.scss */
+/* line 96, ../scss/app.scss */
 .section-header {
   margin: 50px 0;
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* line 94, ../scss/app.scss */
+/* line 102, ../scss/app.scss */
 .section-header > h2 {
   position: relative;
   display: inline-block;
 }
 
-/* line 99, ../scss/app.scss */
+/* line 107, ../scss/app.scss */
 .section-header > h2:before,
 .section-header > h2:after {
   content: "";
@@ -8830,110 +8839,109 @@ p {
   background: #444444;
 }
 
-/* line 109, ../scss/app.scss */
+/* line 117, ../scss/app.scss */
 .section-header > h2:before {
   right: 100%;
   margin-right: 15px;
 }
 
-/* line 114, ../scss/app.scss */
+/* line 122, ../scss/app.scss */
 .section-header > h2:after {
   left: 100%;
   margin-left: 15px;
 }
 
-/* line 122, ../scss/app.scss */
+/* line 130, ../scss/app.scss */
 .splash-wrapper {
   background: linear-gradient(to bottom, rgba(249, 249, 249, 0) 30%, #f9f9f9), linear-gradient(90deg, #f9f9f9, rgba(249, 249, 249, 0.8) 60%, rgba(249, 249, 249, 0)), url(../images/DSC_1484.jpg);
   background-position: center;
   background-size: cover;
 }
 
-/* line 135, ../scss/app.scss */
+/* line 143, ../scss/app.scss */
 .splash-page__headers h1 {
-  margin-top: 50%;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 142, ../scss/app.scss */
+/* line 149, ../scss/app.scss */
 .splash-page__divider {
   width: 80px;
 }
 
-/* line 148, ../scss/app.scss */
+/* line 155, ../scss/app.scss */
 .page-nav {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-/* line 158, ../scss/app.scss */
+/* line 165, ../scss/app.scss */
 .panel.panel--research {
   margin-bottom: 30px;
 }
-/* line 162, ../scss/app.scss */
+/* line 169, ../scss/app.scss */
 .panel > .row {
   background: #FFF;
   padding-bottom: 1px;
 }
-/* line 167, ../scss/app.scss */
+/* line 174, ../scss/app.scss */
 .panel .panel__divider {
   width: 50px;
 }
-/* line 172, ../scss/app.scss */
+/* line 179, ../scss/app.scss */
 .panel .panel__content {
   padding: 15px;
 }
-/* line 176, ../scss/app.scss */
+/* line 183, ../scss/app.scss */
 .panel .panel__heading {
   font-weight: bold;
   margin: 0;
 }
 
-/* line 186, ../scss/app.scss */
+/* line 193, ../scss/app.scss */
 .contact {
   margin-bottom: 50px;
 }
 
-/* line 191, ../scss/app.scss */
+/* line 198, ../scss/app.scss */
 .page-footer {
   padding: 75px 0;
   background-color: #555555;
 }
-/* line 195, ../scss/app.scss */
+/* line 202, ../scss/app.scss */
 .page-footer a {
   color: #CCCCCC;
 }
-/* line 199, ../scss/app.scss */
+/* line 206, ../scss/app.scss */
 .page-footer a:hover {
   color: #e6e6e6;
 }
-/* line 203, ../scss/app.scss */
+/* line 210, ../scss/app.scss */
 .page-footer ul {
   list-style: none;
   text-align: center;
 }
-/* line 206, ../scss/app.scss */
+/* line 213, ../scss/app.scss */
 .page-footer ul li {
   display: inline-block;
   margin: 0 10px;
 }
 
-/* line 213, ../scss/app.scss */
+/* line 220, ../scss/app.scss */
 .hero {
   margin-bottom: 50px;
 }
 
-/* line 221, ../scss/app.scss */
+/* line 228, ../scss/app.scss */
 .content {
   margin-bottom: 50px;
 }
-/* line 224, ../scss/app.scss */
+/* line 231, ../scss/app.scss */
 .content .content__header {
   font-weight: bold;
 }
 
-/* line 231, ../scss/app.scss */
+/* line 238, ../scss/app.scss */
 textarea {
   min-height: 150px;
 }

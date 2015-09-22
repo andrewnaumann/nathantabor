@@ -67,6 +67,14 @@ p {
 //  transform: translateY(-50%);
 }
 
+.vertical-center--medium-up {
+  @media #{$medium-up} {
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+  }
+}
+
 .fixed-nav {
   position: fixed;
   z-index: 99;
@@ -133,7 +141,6 @@ p {
 
 .splash-page__headers {
   h1 {
-    margin-top: 50%;
     text-transform: uppercase;
     font-weight: bold;
   }
