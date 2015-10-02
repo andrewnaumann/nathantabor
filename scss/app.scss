@@ -38,7 +38,8 @@
    "foundation/components/offcanvas",
    "foundation/components/visibility";
 
-$accentColor: #4A90E2;
+//$accentColor: #4A90E2;
+$accentColor: #00ADB5 ;
 $secondaryBackground: #FFF;
 
 p {
@@ -49,7 +50,7 @@ p {
   height: 4px;
   width: 80px;
   margin: 10px 0;
-  background-color: $tuatara;
+  background-color: $body-font-color;
 }
 
 .full-page, .full-height {
@@ -111,7 +112,7 @@ p {
   top: 50%;
   width: 1920px;
   height: 3px;
-  background: $tuatara;
+  background: $body-font-color;
 }
 
 .section-header > h2:before {
@@ -131,10 +132,15 @@ p {
 //  background: linear-gradient(to bottom, rgba(255,255,255,0) 30%, rgba(255,255,255,1)), 
 //              linear-gradient(90deg, rgba(255, 255, 255,1), rgba(255, 255, 255,.8) 60%, rgba(255, 255, 255,0)), 
 //              url(../images/DSC_1484.jpg);
+//  
+//  background: linear-gradient(to bottom, rgba(249,249,249,0) 30%, rgba(249,249,249,1)), 
+//              linear-gradient(90deg, rgba(249, 249, 249,1), rgba(249, 249, 249,.8) 60%, rgba(249, 249, 249,0)), 
+//              url(../images/DSC_1484.jpg);
   
-  background: linear-gradient(to bottom, rgba(249,249,249,0) 30%, rgba(249,249,249,1)), 
-              linear-gradient(90deg, rgba(249, 249, 249,1), rgba(249, 249, 249,.8) 60%, rgba(249, 249, 249,0)), 
+  background: linear-gradient(to bottom, rgba(238,238,238,0) 30%, rgba(238,238,238,1)), 
+              linear-gradient(90deg, rgba(238, 238, 238,1), rgba(238, 238, 238,.8) 60%, rgba(238, 238, 238,0)), 
               url(../images/DSC_1484.jpg);
+  
   background-position: center;
   background-size: cover;
 }
@@ -197,7 +203,7 @@ p {
 // Page Footer
 .page-footer {
   padding: 75px 0;
-  background-color: $charcoal;
+  background-color: #393E46;
   
   a {
     color: $iron;
@@ -233,8 +239,22 @@ p {
   }
 }
 
+.heading {
+  font-weight: bold;
+}
 
 //FORM STYLES
 textarea {
   min-height: 150px;
+}
+
+
+// GRID ITEMS
+
+.grid__item--text {
+  background: $secondaryBackground;
+}
+
+
+.gallery-head {
 }
