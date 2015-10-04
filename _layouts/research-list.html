@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="post row">
+  {% for research in site.research %}
+  <section class="panel panel--research small-12 medium-6 large-12 columns">
+    <div class="row collapse">
+      <div class="small-12 large-6 columns">
+        <img class="panel__image" src="{{ site.url }}{{ research.featuredimage }}">
+      </div>
+      <div class="small-12 large-6 columns">
+        <section class="panel__content">
+          <h3 class="panel__heading">{{ research.title }}</h3>
+          <div class="panel__divider"></div>
+          <p>{{ research.content | strip_html | truncatewords: 50 }}</p>
+          <a href="{{ research.url }}" class="panel__button">Read More</a>
+        </section>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+</div>

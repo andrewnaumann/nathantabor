@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nathan L.M. Tabor</title>
+    <description>The circulation and consumption of lyric poetry are integral aspects of Muslim public culture across Asia. This site features some of my work on this topic in India where poetry gatherings have been an important social, political, and entertaining cultural institution among Urdu language speakers since the eighteenth century. I invite you peruse some of my images and footage shot at poetry gatherings across north India and examine some of the archive I’ve assembled related to the historical circulation of popular Urdu and Persian verse.
+</description>
+    <link>//</link>
+    <atom:link href="//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 04 Oct 2015 19:11:27 +0200</pubDate>
+    <lastBuildDate>Sun, 04 Oct 2015 19:11:27 +0200</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+  </channel>
+</rss>

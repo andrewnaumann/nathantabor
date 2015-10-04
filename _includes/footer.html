@@ -1,0 +1,13 @@
+<footer class="page-footer">
+  <div class="row">
+    <div class="small-12 small-centered columns">
+      <ul>
+        {% for page in site.pages %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>
+
+{% include default-scripts.html %}
