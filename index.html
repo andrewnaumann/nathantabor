@@ -35,7 +35,7 @@ frontpage: true
               <h3 class="panel__heading">{{ research.title }}</h3>
               <div class="panel__divider"></div>
               <p>{{ research.content | strip_html | truncatewords: 30 }}</p>
-              <a href="{{ research.url }}" class="panel__button">Read More</a>
+              <a href="{{ research.baseurl }}" class="panel__button">Read More</a>
             </section>
           </div>
         </div>
