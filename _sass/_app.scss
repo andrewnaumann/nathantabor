@@ -281,3 +281,11 @@ textarea {
 .post-content {
   margin-bottom: 50px;
 }
+
+.gallery-head {
+  margin-bottom: 30px;
+  .gallery-head__content {
+    background: $secondaryBackground;
+    padding: 15px;
+  }
+}

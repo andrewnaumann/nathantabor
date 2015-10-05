@@ -4325,3 +4325,9 @@ textarea {
 
 .post-content {
   margin-bottom: 50px; }
+
+.gallery-head {
+  margin-bottom: 30px; }
+  .gallery-head .gallery-head__content {
+    background: #FFF;
+    padding: 15px; }

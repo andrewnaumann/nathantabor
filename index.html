@@ -35,7 +35,7 @@ frontpage: true
             <section class="panel__content">
               <h3 class="panel__heading">{{ research.title }}</h3>
               <div class="panel__divider"></div>
-              <p>{{ research.content | strip_html | truncatewords: 30 }}</p>
+              <p>{{ research.content | strip_html | truncatewords: 40 }}</p>
               <a href="{{ site.baseurl }}{{ research.url }}" class="panel__button">Read More</a>
             </section>
           </div>
@@ -65,7 +65,7 @@ frontpage: true
               <h3 class="panel__heading">Nathan Tabor</h3>
               <h5 class="panel__heading">Professor at Western Michigan University</h5>
               <div class="panel__divider"></div>
-              <a href="#">Resume</a><br>
+              <a href="{{ site.baseurl }}/Tabor_CV_2015.pdf">CV</a><br>
               <a href="about/">Biography</a>
             </section>
           </div>

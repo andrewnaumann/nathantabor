@@ -9,12 +9,15 @@
     
     {% for gallery in site.data.galleries %}
       {% if gallery.id == page.galleryid %}
+    
     <section class="gallery-head">
       <div class="row">
         <div class="small-12 columns">
-          <h1 class="heading">{{ gallery.title }}</h1>
-          <div class="divider"></div>
-          <p>{{ page.content }}</p>
+          <div class="gallery-head__content">
+            <h1 class="heading">{{ gallery.title }}</h1>
+            <div class="divider"></div>
+            <p>{{ page.content }}</p>
+          </div>
         </div>
       </div>
     </section>
