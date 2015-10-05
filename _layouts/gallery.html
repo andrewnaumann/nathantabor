@@ -24,7 +24,7 @@
       <section class=" grid__item panel panel--research small-12 medium-6 columns">
         <div class="row collapse">
             <div class="small-12 columns">
-                <img class="panel__image" src="{{ site.url }}{{ gallery.imagefolder}}{{ image.name }}">
+                <img class="panel__image" src="{{ site.baseurl }}{{ gallery.imagefolder}}{{ image.name }}">
               <a href="{{ site.url }}{{ gallery.imagefolder}}{{ image.name }}" class="panel__image-link" data-lightbox="{{ page.title }}" data-title="{{ image.title }}"></a>
             </div>
           {% if image.title || image.date || image.location || image.caption %}

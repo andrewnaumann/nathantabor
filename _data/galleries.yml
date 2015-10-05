@@ -1,6 +1,6 @@
 - id: poetryGatherings
   title: Poetry Gatherings
-  imagefolder: images/poetry_gatherings/
+  imagefolder: /images/poetry_gatherings/
   images:
   - name: DSC_0796.jpg
     title: Image Title
@@ -90,7 +90,7 @@
     
 - id: muslimIndia
   title: Muslim India
-  imagefolder: images/
+  imagefolder: /images/
   images:
   - name: DSC_1135.jpg
     title: Image Title
