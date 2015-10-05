@@ -3,7 +3,9 @@
     <div class="small-12 small-centered columns">
       <ul>
         {% for page in site.pages %}
-        <li><a href="{{site.baseurl}}{{ page.url }}">{{ page.title }}</a></li>
+          {% if page.title %}
+            <li><a href="{{site.baseurl}}{{ page.url }}">{{ page.title }}</a></li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
