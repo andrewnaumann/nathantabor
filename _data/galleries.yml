@@ -90,22 +90,93 @@
     
 - id: muslimIndia
   title: Muslim India
-  imagefolder: /images/
+  imagefolder: /images/muslim_india/
   images:
+  - name: DSC_1090.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
   - name: DSC_1135.jpg
     title: Image Title
     description: Description of the image
     location: The location
-  - name: DSC_1268.jpg
+  - name: DSC_2682.jpg
     title: Image Title
     description: Description of the image
     location: The location
-  - name: DSC_1484.jpg
+  - name: DSC_2709.jpg
     title: Image Title
     description: Description of the image
     location: The location
-  - name: DSC_2503.jpg
+  - name: DSC_2721.jpg
     title: Image Title
     description: Description of the image
     location: The location
-
+  - name: DSC_2733.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_2830.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_2902.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_3863.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_3883.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_3916.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_3977.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_4071.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_4101.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_4105.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_4111.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_4178.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_4219.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_5657.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_5873.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_6891.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
+  - name: DSC_6901.jpg
+    title: Image Title
+    description: Description of the image
+    location: The location
