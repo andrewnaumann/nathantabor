@@ -166,19 +166,30 @@ p {
   padding-bottom: 25px;
 }
 
+.rounded-corners {
+  border-radius: 4px;
+}
 
+.rounded-corners img {
+  border-radius: 4px 0 0 4px;
+}
+
+.shadow {
+  box-shadow: 0 0 40px rgba(30,30,30,.2);
+}
  // Panel
 
 .panel {
   
   &.panel--research {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
   
   &>.row {
     background: $secondaryBackground;
     padding-bottom: 1px;
   }
+  
   
   .panel__image-link {
     padding: 0; 
@@ -274,12 +285,10 @@ textarea {
 }
 
 
-.gallery-head {
-}
-
-
 .post-content {
   margin-bottom: 50px;
+  background: $secondaryBackground;
+  padding: 15px;
 }
 
 .gallery-head {
@@ -289,3 +298,4 @@ textarea {
     padding: 15px;
   }
 }
+
