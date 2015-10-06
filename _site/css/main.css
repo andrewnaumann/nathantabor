@@ -58,7 +58,7 @@ body {
   font-size: 16px; }
 
 body {
-  background: #EEEEEE;
+  background: #f5f5f5;
   color: #222831;
   cursor: auto;
   font-family: Lato, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -4246,7 +4246,7 @@ p {
   margin-left: 15px; }
 
 .splash-wrapper {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, #eeeeee), linear-gradient(90deg, white, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0)), url(../images/muslim_india/DSC_4178.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, whitesmoke), linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 20%, rgba(245, 245, 245, 0) 40%), linear-gradient(90deg, white, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0)), url(../images/muslim_india/DSC_4178.jpg);
   background-position: center;
   background-size: cover; }
 
