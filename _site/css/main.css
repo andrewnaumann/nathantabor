@@ -4242,11 +4242,11 @@ p {
   margin-right: 15px; }
 
 .section-header > h2:after {
-  left: 100%;
+  left: x 80%;
   margin-left: 15px; }
 
 .splash-wrapper {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, whitesmoke), linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 20%, rgba(245, 245, 245, 0) 40%), linear-gradient(90deg, white, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0)), url(../images/muslim_india/DSC_4178.jpg);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, whitesmoke), linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 20%, rgba(245, 245, 245, 0) 40%), linear-gradient(90deg, white, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0)), url(../images/misc/Background.jpg);
   background-position: center;
   background-size: cover; }
 
@@ -4260,15 +4260,6 @@ p {
 .page-nav {
   padding-top: 25px;
   padding-bottom: 25px; }
-
-.rounded-corners {
-  border-radius: 4px; }
-
-.rounded-corners img {
-  border-radius: 4px 0 0 4px; }
-
-.shadow {
-  box-shadow: 0 0 40px rgba(30, 30, 30, 0.2); }
 
 .panel.panel--research {
   margin-bottom: 35px; }
@@ -4313,11 +4304,6 @@ p {
       display: inline-block;
       margin: 0 10px; }
 
-.hero {
-  position: relative;
-  background-color: #393E46;
-  height: 300px; }
-
 .content {
   margin-bottom: 50px; }
   .content .content__header {
@@ -4342,3 +4328,83 @@ textarea {
   .gallery-head .gallery-head__content {
     background: #FFF;
     padding: 15px; }
+
+.panel .panel__content {
+  background: #FFF; }
+
+.card {
+  margin: 0;
+  max-width: 62.5rem;
+  width: 100%;
+  margin-bottom: 1.875rem;
+  background: #FFF;
+  border-radius: 4px;
+  box-shadow: 0 0 40px rgba(30, 30, 30, 0.2); }
+  .card:before, .card:after {
+    content: " ";
+    display: table; }
+  .card:after {
+    clear: both; }
+  .card .card__image {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    float: left;
+    border-radius: 4px 4px 0 0; }
+  .card .card__content {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+  .card .card__heading {
+    font-weight: bold; }
+
+.card.card--full-width-large .card__image {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  float: left; }
+  @media only screen and (min-width: 64.0625em) {
+    .card.card--full-width-large .card__image {
+      padding-left: 0;
+      padding-right: 0;
+      width: 50%;
+      float: left;
+      border-radius: 4px 0 0 4px; } }
+.card.card--full-width-large .card__content {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left; }
+  @media only screen and (min-width: 64.0625em) {
+    .card.card--full-width-large .card__content {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 50%;
+      float: left; } }
+
+.card.card--gallery .card__image {
+  float: none; }
+.card.card--gallery .card__image-link {
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  border: 1px solid rgba(255, 255, 255, 0); }
+  .card.card--gallery .card__image-link:hover {
+    border: 1px solid #00ADB5;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 0 5px #00ADB5;
+    transition: border .2s, box-shadow .2s; }
+.card.card--gallery .card--gallery__image-wrapper {
+  position: relative; }
+
+.card.card--no-text .card__image {
+  border-radius: 4px; }
+.card.card--no-text .card__image-link:hover {
+  border-radius: 4px; }

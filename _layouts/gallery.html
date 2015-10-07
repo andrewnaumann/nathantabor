@@ -10,42 +10,46 @@
     {% for gallery in site.data.galleries %}
       {% if gallery.id == page.galleryid %}
     
-    <section class="gallery-head">
-      <div class="row">
-        <div class="small-12 columns">
-          <div class="gallery-head__content">
-            <h1 class="heading">{{ gallery.title }}</h1>
+    <header class="row">
+      <div class="small-12 columns">
+        <div class="card">
+          <section class="card__content">
+            <h1 class="card__heading">{{ gallery.title }}</h1>
             <div class="divider"></div>
             <p>{{ page.content }}</p>
-          </div>
+          </section>
         </div>
       </div>
-    </section>
-
+    </header>
+    
     <div class="row grid">
       {% for image in gallery.images %}
-      <section class=" grid__item panel panel--research small-12 medium-6 columns">
-        <div class="row collapse">
-            <div class="small-12 columns">
-                <img class="panel__image" src="{{ site.baseurl }}{{ gallery.imagefolder}}{{ image.name }}">
-              <a href="{{ site.baseurl }}{{ gallery.imagefolder}}{{ image.name }}" class="panel__image-link" data-lightbox="{{ page.title }}" data-title="{{ image.title }}"></a>
+        {% if image.title || image.date || image.location || image.caption %}
+          {% assign hasText = true %}
+        {% else %}
+          {% assign hasText = false %}
+        {% endif %}
+        <div class="small-12 medium-6 columns grid__item">
+          <div class="card card--gallery {% if hasText == false %}card--no-text{% endif %}">
+            <div class="card--gallery__image-wrapper">
+              <img class="card__image" src="{{ site.baseurl }}{{ gallery.imagefolder }}{{ image.name }}">
+              <a href="{{ site.baseurl }}{{ gallery.imagefolder}}{{ image.name }}" class="card__image-link" data-lightbox="{{ page.title }}" data-title="{{ image.title }}"></a>
             </div>
-          {% if image.title || image.date || image.location || image.caption %}
-          <div class="small-12 columns">
-            <section class="panel__content">
-              <h3 class="panel__heading">{{ image.title }}</h3>
-              {% if image.date %}<h5>{{ image.date }}</h5>{% endif %}
-              {% if image.location %}<h5>{{ image.location }}</h5> {% endif %}
-              {% if image.caption %}<div class="panel__divider"></div>{% endif %}
-              {% if image.caption %}<p>{{ image.caption }}</p> {% endif %}
-            </section>
+            {% if hasText %}
+              <section class="card__content">
+                {% if image.title %}<h3 class="card__heading">{{ image.title }}</h3>{% endif %}
+                {% if image.date %}<h5>{{ image.date }}</h5>{% endif %}
+                {% if image.location %}<h5>{{ image.location }}</h5> {% endif %}
+                {% if image.caption %}<div class="divider"></div>{% endif %}
+                {% if image.caption %}<p>{{ image.caption }}</p> {% endif %}
+              </section>
+            {% endif %}
           </div>
-          {% endif %}
         </div>
-      </section>
       {% endfor %}
-
-    </div> <!-- end Row -->
+    </div>
+    
+    
     {% endif %}
     {% endfor %}
 

@@ -1,20 +1,27 @@
 ---
 layout: default
 ---
-<div class="row">
-  {% for research in site.research %}
-  <div class="small-12 medium-6 large-12 columns">
 
-    <div class="card card--full-width-large">
+<!-- The anatomy of a "Panel" object -->
+  
+
+
+<div class="row">
+  
+  {% for research in site.research %}
+
+  <div class="small-12 medium-6 large-12 columns">
+    
+    <div class="card">
       <img class="card__image" src="{{ site.baseurl }}{{ research.featuredimage }}">
       <section class="card__content">
-        <h3 class="card__heading">{{ research.title }}</h3>
-        <div class="divider"></div>
+        <h3 class="card__header">{{ research.title }}</h3>
         <p clas="card__body">{{ research.content | strip_html | truncatewords: 40 }}</p>
-        <a href="{{site.baseurl}}{{research.url}}">See More</a>
       </section>
     </div>
-
+    
   </div>
+
   {% endfor %}
-</div>
+
+</div> <!-- end Row -->

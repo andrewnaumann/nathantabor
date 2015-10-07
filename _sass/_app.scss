@@ -123,7 +123,7 @@ p {
 }
 
 .section-header > h2:after {
-  left: 100%;
+  left: x 80%;
   margin-left: 15px;
 }
 
@@ -132,7 +132,7 @@ p {
 // Splash Section
 .splash-wrapper {
 
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 10%, rgba(245,245,245,1)), linear-gradient(to bottom, rgba(255,255,255,.8) 20%, rgba(245,245,245,0) 40%) , linear-gradient(90deg, rgba(255, 255, 255,1), rgba(255, 255, 255,.9) 60%, rgba(255, 255, 255,0)), url(../images/muslim_india/DSC_4178.jpg);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 10%, rgba(245,245,245,1)), linear-gradient(to bottom, rgba(255,255,255,.8) 20%, rgba(245,245,245,0) 40%) , linear-gradient(90deg, rgba(255, 255, 255,1), rgba(255, 255, 255,.9) 60%, rgba(255, 255, 255,0)), url(../images/misc/Background.jpg);
   
   
 //  background: linear-gradient(to bottom, rgba(249,249,249,0) 30%, rgba(249,249,249,1)), 
@@ -166,17 +166,6 @@ p {
   padding-bottom: 25px;
 }
 
-.rounded-corners {
-  border-radius: 4px;
-}
-
-.rounded-corners img {
-  border-radius: 4px 0 0 4px;
-}
-
-.shadow {
-  box-shadow: 0 0 40px rgba(30,30,30,.2);
-}
  // Panel
 
 .panel {
@@ -254,12 +243,6 @@ p {
   }
 }
 
-.hero {
-  position: relative;
-  background-color: #393E46;
-  height: 300px;
-}
-
 .content {
   margin-bottom: 50px;
   
@@ -296,6 +279,101 @@ textarea {
   .gallery-head__content {
     background: $secondaryBackground;
     padding: 15px;
+  }
+}
+
+
+$panelBackground: #FFF;
+.panel {
+  
+  .panel__content {
+    background: $panelBackground;
+  }
+  
+}
+
+
+.card {
+  @include grid-row($behavior: collapse);
+  margin-bottom: $column-gutter;
+  background: $secondaryBackground;
+  border-radius: 4px;
+  box-shadow: 0 0 40px rgba(30,30,30,.2);
+  
+  .card__image {
+    @include grid-column(12, $collapse: true);
+    border-radius: 4px 4px 0 0;    
+  }
+  
+  .card__content {
+    @include grid-column(12);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .card__heading {
+    font-weight: bold;
+  }
+  
+}
+
+.card.card--full-width-large {
+
+  .card__image {
+    @include grid-column(12, $collapse: true);
+    
+    @media #{$large-up} {
+      @include grid-column(6, $collapse: true);
+      border-radius: 4px 0 0 4px;
+    }
+  }
+
+  .card__content {
+    @include grid-column(12);
+    
+    @media #{$large-up} {
+      @include grid-column(6);
+    }
+  }
+}
+
+.card.card--gallery {
+  
+  .card__image {
+    float: none;
+  }
+  
+  .card__image-link {
+    padding: 0; 
+    display: block;
+    position: absolute;
+    top:0;
+    bottom:-1px;
+    left:0;
+    right:0;
+    border: 1px solid rgba(255,255,255,0);
+    
+    &:hover {
+      border: 1px solid $accentColor;
+      border-radius: 4px 4px 0 0; 
+      box-shadow: 0 0 5px $accentColor;
+      transition: border .2s, box-shadow .2s;
+    }
+  }
+  
+  .card--gallery__image-wrapper {
+    position: relative;
+  }
+  
+}
+
+.card.card--no-text {
+  .card__image {
+    border-radius: 4px;
+  }
+  
+  .card__image-link:hover {
+    border-radius: 4px;
   }
 }
 
