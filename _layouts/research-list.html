@@ -2,11 +2,14 @@
 layout: default
 ---
 <div class="row">
-  {% for research in site.research %}
-  <div class="small-12 medium-6 large-12 columns">
+{% for research in site.research reversed %}
+  <div class="small-12 {% if research.featuredimage %} medium-6 large-12{% endif %} columns">
 
-    <div class="card card--full-width-large">
+    <div class="card card--full-width-large {% if research.featuredimage == nil %}card--no-image{% endif %}">
+      
+      {% if research.featuredimage %}
       <img class="card__image" src="{{ site.baseurl }}{{ research.featuredimage }}">
+      {% endif %}
       <section class="card__content">
         <h3 class="card__heading">{{ research.title }}</h3>
         <div class="divider"></div>
@@ -16,5 +19,5 @@ layout: default
     </div>
 
   </div>
-  {% endfor %}
+{% endfor %}
 </div>

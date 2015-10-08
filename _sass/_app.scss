@@ -317,6 +317,14 @@ $panelBackground: #FFF;
   
 }
 
+.card.card--full-width-large.card--no-image {
+  .card__content {
+    @media #{$large-up} {
+      @include grid-column(12);
+    }
+  }
+}
+
 .card.card--full-width-large {
 
   .card__image {
