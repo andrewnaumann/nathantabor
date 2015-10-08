@@ -315,3 +315,14 @@ textarea {
   }
 }
 
+
+.hero {
+  height: 400px;
+  margin-bottom: -100px;
+  overflow: hidden;
+  position: relative;
+  
+  .hero__image {
+    position: absolute;
+  }
+}

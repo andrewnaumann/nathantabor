@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+featuredimage: /images/misc/DSC_1565.jpg
 ---
 
 I was born in Orange County and raised in the Inland Empire of Southern California. I received my BA (Honors) (2002) from the University of Redlands Johnston Center and my M. Mus. (2005) in Musicology/Ethnomusicology at the University of Texas at Austin. After focusing on Urdu and Persian literature and language in Lucknow, India, I returned to Texas to study under Syed Akbar Hyder at UT’s Department of Asian Studies. I recently completed my PhD in the winter of 2014 and I now teach at Western Michigan University’s Lee Honors College and Department of Comparative Religion.

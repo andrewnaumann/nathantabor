@@ -7,6 +7,10 @@
 
     {% include header.html %}
     
+    <div class="hero" id="js-hero">
+      <img class="hero__image" id="js-hero__image" src="{{site.baseurl}}{{page.featuredimage}}">
+    </div>
+    
     {% for gallery in site.data.galleries %}
       {% if gallery.id == page.galleryid %}
     
