@@ -97,7 +97,8 @@ p {
 }
 
 .section-header {
-  margin: 50px 0;
+  // Top margin is 50px - columngutter (30px)
+  margin: 50px - 30px 0 50px 0;
   overflow: hidden;
   white-space: nowrap; 
 }
@@ -128,21 +129,10 @@ p {
 }
 
 
-
 // Splash Section
 .splash-wrapper {
 
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 10%, rgba(245,245,245,1)), linear-gradient(to bottom, rgba(255,255,255,.8) 20%, rgba(245,245,245,0) 40%) , linear-gradient(90deg, rgba(255, 255, 255,1), rgba(255, 255, 255,.9) 60%, rgba(255, 255, 255,0)), url(../images/misc/Background.jpg);
-  
-  
-//  background: linear-gradient(to bottom, rgba(249,249,249,0) 30%, rgba(249,249,249,1)), 
-//              linear-gradient(90deg, rgba(249, 249, 249,1), rgba(249, 249, 249,.8) 60%, rgba(249, 249, 249,0)), 
-//              url(../images/muslim_india/DSC_4178.jpg);
-//  
-//  background: linear-gradient(to bottom, rgba(238,238,238,0) 30%, rgba(238,238,238,1)), 
-//              linear-gradient(90deg, rgba(238, 238, 238,1), rgba(238, 238, 238,.8) 60%, rgba(238, 238, 238,0)), 
-//              url(../images/muslim_india/DSC_4178.jpg);
-  
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 10%, rgba(245,245,245,1)), linear-gradient(to bottom, rgba(255,255,255,.8) 20%, rgba(245,245,245,0) 40%) , linear-gradient(90deg, rgba(255, 255, 255,1), rgba(255, 255, 255,.9) 60%, rgba(255, 255, 255,0)), url(../images/misc/Background.jpg);  
   background-position: center;
   background-size: cover;
 }
@@ -164,56 +154,6 @@ p {
 .page-nav {
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
- // Panel
-
-.panel {
-  
-  &.panel--research {
-    margin-bottom: 35px;
-  }
-  
-  &>.row {
-    background: $secondaryBackground;
-    padding-bottom: 1px;
-  }
-  
-  
-  .panel__image-link {
-    padding: 0; 
-    display: block;
-    position: absolute;
-    top:0;
-    bottom:-1px;
-    left:0;
-    right:0;
-    border: 1px solid rgba(255,255,255,0);
-    
-    &:hover {
-      border: 1px solid $accentColor;
-      box-shadow: 0 0 5px $accentColor;
-      transition: border .2s, box-shadow .2s;
-    }
-  }
-  
-  .panel__divider {
-    @extend .divider;
-    width: 50px;
-  }
-  
-  .panel__content {
-    padding: 15px;
-  }
-  
-  .panel__heading {
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .panel__button {
-//    text-decoration: underline;
-  }
 }
 
 .contact {
@@ -280,16 +220,6 @@ textarea {
     background: $secondaryBackground;
     padding: 15px;
   }
-}
-
-
-$panelBackground: #FFF;
-.panel {
-  
-  .panel__content {
-    background: $panelBackground;
-  }
-  
 }
 
 
