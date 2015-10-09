@@ -317,12 +317,19 @@ textarea {
 
 
 .hero {
-  height: 400px;
-  margin-bottom: -100px;
-  overflow: hidden;
+  margin-bottom: -50px;
   position: relative;
   
-  .hero__image {
-    position: absolute;
+  @media #{$medium-up}{
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: -100px;
   }
+  
+  .hero__image {
+    @media #{$medium-up}{
+      position: absolute;
+    }
+  }
+
 }
