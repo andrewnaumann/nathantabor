@@ -10,6 +10,8 @@ url: "http://andrewnaumann.github.io" # the base hostname & protocol for your si
 collections:
   research:
     output: true
+  image-data-collection:
+    output: true
 
 # Build settings
 markdown: kramdown

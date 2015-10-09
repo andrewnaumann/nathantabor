@@ -1,0 +1,88 @@
+---
+layout: default
+title: Image Data
+---
+
+{% for gallery in site.data.galleries %}
+  {% if gallery.id == page.galleryid %}
+
+<header class="row">
+  <div class="small-12 columns">
+    <div class="card">
+      <section class="card__content">
+        <h1 class="card__heading">Image Metadata for {{ gallery.title }} Gallery</h1>
+        <div class="divider"></div>
+        The following photo's are what you have sent me to be included into the {{ gallery.title }} gallery.
+        Please take some time to enter as much information on each photo that you would like.  If you dont want to enter any 
+        information for a photo or just would like to enter a couple peices of data, leave the rest of the entries blank.  When you are finished
+        there is an "Email Data" button at the bottom.  This will take all the information that you have entered and place it into your default
+        email client (probably apple mail) and allow you to send that to me.<br><br>
+        <strong>It's very important to understand that this data is not saved anywhere so if you refresh the page or close the browser<br>anything you have entered will be lost.  Please be sure that you have enough time to input data for the whole list before you begin.<br><br>
+        You may want to fill out the data for just 1 of the images and click on the "Email Data" button at the bottom of the page just to test there are no problems
+        before you fill out all of them</strong>
+      </section>
+    </div>
+  </div>
+</header>
+
+<div class="row">
+    <form action="MAILTO:apnaumann@gmail.com" method="post" enctype="text/plain">
+      {% for image in gallery.images %}
+      <div class="small-12 medium-6 columns">
+        <div class="card">
+            <img class="card__image" src="{{site.baseurl}}{{gallery.imagefolder}}{{image.name}}">
+          <div class="card__content">
+            <h5>{{ image.name }}</h5>
+
+            <div class="row">
+              <div class="small-12 columns">
+                <label>Include this photo in the {{ gallery.title }} gallery?</label>
+              </div>
+              <div class="small-12 columns">
+                <input type="radio" name="{{ image.name }}-use-photo" id="{{ image.name }}-use-photoTrue" checked value="true"><label for="{{ image.name }}-use-photoTrue">Yes</label>
+                <input type="radio" name="{{ image.name }}-use-photo" id="{{ image.name }}-use-photoFalse" value="false"><label for="{{ image.name }}-use-photoFalse">No</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-2 columns">
+                <label for="title" class="left inline">Title</label>
+              </div>
+              <div class="small-10 columns">
+                <input type="text" id="{{image.name}}-title" name="{{image.name}}-title" placeholder="Image Title">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-2 columns">
+                <label for="location" class="left inline">Location</label>
+              </div>
+              <div class="small-10 columns">
+                <input type="text" id="{{image.name}}-location" name="{{image.name}}-location" placeholder="Image Location">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-2 columns">
+                <label for="date" class="left inline">Date</label>
+              </div>
+              <div class="small-10 columns">
+                <input type="text" id="{{image.name}}-date" name="{{image.name}}-date" placeholder="Image Date">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-2 columns">
+                <label for="caption" class="left inline">Caption</label>
+              </div>
+              <div class="small-10 columns">
+                <textarea style="min-height:60px;" id="{{image.name}}-caption" name="{{image.name}}-caption" placeholder="Image Caption"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <div class="small-12 columns text-center">
+        <button type="submit" value="send">Email Data</button>
+      </div>
+    </form>
+</div>
+  {% endif %}
+{% endfor %}

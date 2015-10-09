@@ -20,7 +20,7 @@
           <section class="card__content">
             <h1 class="card__heading">{{ gallery.title }}</h1>
             <div class="divider"></div>
-            <p>{{ page.content }}</p>
+            {{ page.content | markdownify }}
           </section>
         </div>
       </div>
@@ -42,9 +42,9 @@
             {% if hasText %}
               <section class="card__content">
                 {% if image.title %}<h3 class="card__heading">{{ image.title }}</h3>{% endif %}
-                {% if image.date %}<h5>{{ image.date }}</h5>{% endif %}
-                {% if image.location %}<h5>{{ image.location }}</h5> {% endif %}
                 {% if image.caption %}<div class="divider"></div>{% endif %}
+                {% if image.date %}<h5>{{ image.date }} {{ image.location }}</h5>{% endif %}
+<!--                {% if image.location %}<h5>{{ image.location }}</h5> {% endif %}-->
                 {% if image.caption %}<p>{{ image.caption }}</p> {% endif %}
               </section>
             {% endif %}
