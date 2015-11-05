@@ -5,7 +5,7 @@ email: your-email@domain.com
 description: The circulation and consumption of lyric poetry are integral aspects of Muslim public culture across Asia. This site features some of my work on this topic in India where poetry gatherings have been an important social, political, and entertaining cultural institution among Urdu language speakers since the eighteenth century. I invite you to peruse some of my images and footage shot at poetry gatherings across north India and examine some of the archive I’ve assembled related to the historical circulation of popular Urdu and Persian verse.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://andrewnaumann.github.io" # the base hostname & protocol for your site
+url: "http://nathanlmtabor.com/" # the base hostname & protocol for your site
 
 collections:
   research:
