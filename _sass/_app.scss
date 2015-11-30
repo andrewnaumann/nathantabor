@@ -303,6 +303,11 @@ textarea {
     position: relative;
   }
   
+  .card--gallery__video-wrapper {
+    position: relative;
+    max-height: 315px;
+  }
+  
 }
 
 .card.card--no-text {

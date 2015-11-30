@@ -27,6 +27,15 @@
     </header>
     
     <div class="row grid">
+      {% for video in gallery.videos %}
+      <div class="small-12 medium-6 columns grid__item">
+        <div class="card card--gallery card--no-text">
+            <div class="card--gallery__video-wrapper">
+              {{ video.html }}
+            </div>
+      </div>
+      </div>
+      {% endfor %}
       {% for image in gallery.images %}
         {% if image.title || image.date || image.location || image.caption %}
           {% assign hasText = true %}

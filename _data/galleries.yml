@@ -1,6 +1,13 @@
 - id: poetryGatherings
   title: Poetry Gatherings
   imagefolder: /images/poetry_gatherings/
+  videos:
+  - html: <iframe width="100%" height="315" src="https://www.youtube.com/embed/SV--bP2cNJQ" frameborder="0" allowfullscreen></iframe>
+  
+  - html: <iframe width="100%" height="315s" src="https://www.youtube.com/embed/6_Gr9XQPzzg" frameborder="0" allowfullscreen></iframe>
+  
+  - html: <iframe width="100%" height="315" src="https://www.youtube.com/embed/MS8HdleyCaY" frameborder="0" allowfullscreen></iframe>
+  
   images:
   - name: DSC_0796.jpg
 
@@ -96,6 +103,9 @@
 - id: muslimIndia
   title: Muslim India
   imagefolder: /images/muslim_india/
+  videos:
+  - html: <iframe width="100%" height="315" src="https://www.youtube.com/embed/Mz8T5cFE3UY" frameborder="0" allowfullscreen></iframe>
+  
   images:
   - name: DSC_1090.jpg
 
