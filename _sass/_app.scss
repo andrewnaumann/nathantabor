@@ -334,6 +334,7 @@ textarea {
   .hero__image {
     @media #{$medium-up}{
       position: absolute;
+      width: 100%;
     }
   }
 
