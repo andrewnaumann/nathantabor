@@ -151,3 +151,19 @@
 
   - name: DSC_6901.jpg
 
+- id: archive
+  title: Archive
+  imagefolder: /images/archive/
+  
+  images:
+  - name: random_sticky.png
+  - name: hamdam_ashiq hawas_mushafi.png
+  - name: sticky_circle.png
+  - name: sticky_circle_copy.png
+  - name: sticky_connection_2.png
+  - name: circle_b.png
+  - name: random_rainbow.png
+  - name: untitled_copy.png
+  - name: connection_sticky.png
+  - name: sticky_tarh.png
+  - name: sticky_b.png
