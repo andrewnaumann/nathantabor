@@ -2,7 +2,7 @@
 layout: gallery
 title: Archive
 galleryid: archive
-featuredimage: /images/archive/sticky_circle.png
+featuredimage: /images/archive/cropped.png
 permalink: /archive/
 published: true
 ---
