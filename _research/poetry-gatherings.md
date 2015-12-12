@@ -2,7 +2,7 @@
 layout: gallery
 title: Poetry Gatherings
 galleryid: poetryGatherings
-featuredimage: /images/poetry_gatherings/DSC_6664.jpg
+featuredimage: /images/poetry_gatherings/DSC_5657.jpg
 permalink: "research/poetry-gatherings/"
 published: true
 ---
